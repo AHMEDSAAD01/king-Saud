@@ -49,7 +49,6 @@ def login():
 
     return render_template("login.html")
 
-if __name__ == "__main__":
-    if not os.path.exists("logs"):
-        os.makedirs("logs")
-    app.run(debug=True)
+if _name_ == "_main_":
+    port = int(os.environ.get("PORT", 5000))  # احصل على المنفذ من البيئة إذا كان موجودًا
+    app.run(host="0.0.0.0", port=port, debug=True)
