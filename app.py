@@ -4,8 +4,7 @@ import datetime
 import os
 
 app = Flask(__name__)
-if __name__ == "__main__":
-    app.run(debug=True)
+
 # بيانات المستخدم للتجربة
 VALID_USERNAME = "admin"
 VALID_PASSWORD = "1234"
